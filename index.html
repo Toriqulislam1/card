@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Card - ProbashSathi</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #000;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #0b2243;
+    }
+
+    .logo span {
+      color: red;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color: #0b2243;
+      margin-bottom: 10px;
+    }
+
+    .card-header {
+      background: #f4f4f4;
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 30px;
+      margin: 0 10px;
+    }
+
+    .card-header-left {
+      display: flex;
+      align-items: center;
+    }
+    .fas{
+        font-size: 27px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background-color: #0b2243;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .user-details h3 {
+      margin: 0;
+      font-size: 16px;
+      color: #0b2243;
+    }
+
+    .user-details p {
+      margin: 0;
+      color: green;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .my-card {
+      background: linear-gradient(to right, #5b4bc9, #926ed7);
+      color: #fff;
+      border-radius: 15px;
+      margin: 15px;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .my-card::before {
+      content: '';
+      position: absolute;
+      background: rgba(255, 255, 255, 0.2);
+      width: 200%;
+      height: 100%;
+      top: -20px;
+      left: -50%;
+      transform: rotate(20deg);
+    }
+
+    .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    .my-card-title{
+        display: flex;
+        padding-bottom: 5px;
+        justify-content: space-between;
+        font-weight: bold;
+    }
+    .my-health-card{
+          font-family: initial;
+    }
+    .company-name{
+        color:#0e1959;
+    }
+    .card-left .chip {
+      width: 40px;
+      height: 30px;
+      background: gold;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    img{
+        width: 52px;
+        height: 30px;
+    }
+    
+
+    .card-left .card-number {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card-left h4 {
+      margin: 5px 0 0 0;
+      font-size: 14px;
+    }
+
+    .card-right {
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .card-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    }
+
+    .card-bottom .name {
+      font-weight: bold;
+    }
+
+    .card-bottom .card-dates {
+      font-size: 12px;
+      display: flex;
+      gap: 10px;
+      
+    }
+
+    .table-section {
+      margin: 15px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    th, td {
+      padding: 10px;
+      font-size: 14px;
+    }
+    tr:nth-child(odd) {
+        background-color: #edebeb;
+    }
+
+    th {
+      background: #0b2243;
+      color: #fff;
+    }
+
+    .facilities {
+      margin: 15px;
+    }
+
+    .facilities h4 {
+      margin-bottom: 8px;
+      font-size: 16px;
+      border-bottom: 2px solid #0b2243;
+      display: inline-block;
+      padding-bottom: 2px;
+    }
+
+    .footer-nav {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: #0b2243;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 10px 0;
+    }
+
+    .footer-nav i {
+      color: #fff;
+      font-size: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">Pro<span>bash</span>Sathi</div>
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <!-- My Card Title -->
+  <div class="title">My Card</div>
+
+  <!-- User Card Info -->
+  <div class="card-header">
+    <div class="card-header-left">
+      <div class="avatar">S</div>
+      <div class="user-details">
+        <h3>Shahin Reza</h3>
+        <p>Card No: 345435435</p>
+      </div>
+    </div>
+ <i class="fas fa-bell"></i>
+  </div>
+
+  <!-- Health Card -->
+  <div class="my-card">
+        <div class="my-card-title">
+            <div class="my-health-card">My Health Card </div>
+            <div class="company-name">Probash Sathi</div>
+        </div>
+    <div class="card-top">
+      <div class="card-left">
+        <div class="">
+            <img src="chip.png" alt="">
+        </div>
+        <div class="card-number">345435435</div>
+        <h4>Yearly Subscription</h4>
+      </div>
+      
+    </div>
+    <div class="card-bottom">
+      <div class="name">SHAHIN REZA</div>
+      <div class="card-dates">
+        <div class="date-issue">
+            Date Of Issue<br> 14 March 2025<br/>
+        </div>        
+        <div class="date-expiry">
+            Date Of Expiry<br> 14 March 2026
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Table -->
+  <div class="table-section">
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Relation</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Shahin Reza</td>
+          <td>Spouse</td>
+          <td>CardHolder</td>
+        </tr>
+        <tr>
+          <td>Shahin Reza</td>
+          <td>Spouse</td>
+          <td>CardHolder</td>
+        </tr>
+        <tr>
+          <td>Shahin Reza</td>
+          <td>Spouse</td>
+          <td>CardHolder</td>
+        </tr>
+        <tr>
+          <td>Shahin Reza</td>
+          <td>Spouse</td>
+          <td>CardHolder</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Facilities -->
+  <div class="facilities">
+    <h4>Health Card Facilities:</h4>
+    <p>
+      CARD HOLDER WILL GET BDT-12,000. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    </p>
+    <p>
+      MEMBER WILL GET GP FREE CONSULTANCY, UP TO 50%
+    </p>
+  </div>
+
+  <!-- Footer -->
+  <!-- <div class="footer-nav">
+    <i class="fas fa-home"></i>
+    <i class="fas fa-bell"></i>
+    <i class="fas fa-camera"></i>
+    <i class="fas fa-user"></i>
+  </div> -->
+</body>
+</html>
